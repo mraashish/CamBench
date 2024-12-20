@@ -32,7 +32,6 @@ public class InsecureRandom2 {
 
         byte[] ivBytes = new byte[16];
         SecureRandom secureRandom = new SecureRandom();
-        secureRandom.setSeed(123);
         secureRandom.nextBytes(ivBytes);
 
         IvParameterSpec iv = new IvParameterSpec(ivBytes);
